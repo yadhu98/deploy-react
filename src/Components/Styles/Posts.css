@@ -315,6 +315,7 @@
 
 @media screen and (max-width:648px){
     .post{
+        margin-left: 5px;;
         height : 400px;
         width :350px;
         display: block;
@@ -408,7 +409,7 @@
     }
     .commentSection{
         position: relative;
-        top : -200px;
+        top : -210px;
         
         display : flex;
         flex-direction: row;
@@ -420,7 +421,7 @@
         border : none;
         outline: none;
         background: none;
-        height : 30px;
+        height : 20px;
         width : 200px;
     }
     .commenttextbar{
@@ -430,7 +431,7 @@
         align-items : center;
         padding: 10px;
         border-radius: 20px;
-        height : 20px;
+        height : 10px;
         margin-left : 20px;
         /* border: 1px solid black; */
         background : #EEF3F8;

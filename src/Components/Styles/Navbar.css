@@ -98,7 +98,7 @@
 @media screen and (max-width:648px){
     .navbar{
         position : sticky;
-        margin-left: 0px;
+        margin-left: -15px;
     }
     .navbar-right{
         display: flex;
@@ -113,8 +113,8 @@
     .navbar-search{
         position : absolute;
         top : 10px;
-        left: 80px;
-        width : 250px;
+        left: 70px;
+        width : 220px;
         height : 10px;
     }
     .menu-icon{
@@ -138,7 +138,7 @@
     .avatar-container{
         position : absolute;
         top : -640px;
-        left : 50px;
+        left : 45px;
         margin :0;
         object-fit : contain;
         /* border: 1px solid black; */
@@ -164,7 +164,7 @@
         display : flex;
         position: absolute;
         top : -640px;
-        left : 360px;
+        left : 340px;
         /* border: 1px solid black; */
         width :50px;
         
@@ -203,6 +203,8 @@
         width : 60px;
         padding-left: 15px;
     }
+    .avatar-container{
 
+    }
    
 }
