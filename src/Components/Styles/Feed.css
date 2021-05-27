@@ -89,4 +89,9 @@
     .startpost{
         display: none;
     }
+    .post_container{
+        position: absolute;
+        left : -35px;
+        top : 50px;
+}
 }
