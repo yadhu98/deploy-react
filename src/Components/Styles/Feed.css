@@ -10,6 +10,9 @@
 .startpost{
     display :none;
 }
+.post_container{
+    margin-left: 20px;
+}
 .feedinput{
     display : flex;
     justify-content : center;
@@ -46,6 +49,11 @@
         left :300px;
         top : 50px;
     }
+    .post_container{
+            position: absolute;
+            left : 300px;
+            top : 200px;
+    }
 }
 @media screen and (max-width:969px){
     .feed{
@@ -69,11 +77,12 @@
     }
     .startpostbtnres{
         height:60px;
-        width : 250px;
+        min-width : 400px;
         background : #0077B5;
         color : white;
         border-radius : 12px;
         border : none;
+        margin-left: 40px;
     }
 }
 @media screen and (max-width:648px){

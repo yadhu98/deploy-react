@@ -8,7 +8,7 @@
     flex-direction : column;
 }
 .postHeader {
-    
+ padding-top: 10px;; 
  border : 1px solid lightgray;
  display : flex;
  align-items : center;
@@ -18,35 +18,32 @@
 }
 .img{
     margin-left : 20px;
-    position: relative;
-    top : 20px;
 }
 .postHeaderinfo{
-    display : block;
-   margin : 10px;
-   font-size : 12px; 
-   gap : 1rem;
+    display : flex;
+   flex-direction: column;
+   align-items : flex-start;
+    margin-left : 10px;
 }
-.h4{
-    margin-top: 30px;
-   position: absolute;
+.PostmansName{
+    font-size: medium;
+    font-weight: 600;
 }
 .dateofpost{
-    position: absolute;
     display : flex;
     align-items : center;
-    top : 400px;
+    color: grey;
+    font-size : 12px;
 }
 .designation{
     display : flex;
-    position: absolute;
-    top : 380px;
+    font-size: 14px;
+    color : grey;
 }
 .description{
-    margin-top: 50px;
-    margin-left: 30px;
-    font-size: 15px;
-   padding-right: 30px;
+   font-size: 15px;
+   padding: 5px;
+   margin: 15px;;
 }
 .postcontnt{
     border : 1px solid lightgrey;
@@ -128,317 +125,137 @@
     margin-top : 10px;
     width : 500px;
 }
-@media screen and (max-width:1110px){
+@media screen  and (max-width:1110px){
     .post{
-        width :500px;
-        display: block;
-        position: absolute;
-        left :150px;
-        top : 70px;
-        font-size : small;
-    }
-    .designation{
+        width : 400px;
         display : flex;
-        position: absolute;
-        top : 30px;
-    }
-    .dateofpost{
-        position: absolute;
-        display : flex;
-        align-items : center;
-        top : 45px;
-    }
-    .commenttext{
-        /* border : none; */
-        /* border : 1px solid black; */
-        outline: none;
-        background: none;
-        height : 30px;
-        width : 300px;
-    }
-    .Like{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '15px';
-    }
-    .Comment{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '15px';
-    }
-    .Share{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '15px';
-    }
-    .Send{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '15px';
-    }
-}
-
-@media screen and (max-width:969px){
-    .post{
-        height : 400px;
-        width :350px;
-        display: block;
-        position: absolute;
-        left :150px;
-        top : 160px;
-        font-size : small;
-    }
-    .postHeader {
-    
-        border : 1px solid lightgray;
-        display : flex;
-        align-items : center;
-        border-bottom : none;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-        position: relative;
-        top :-150px;
-       }
-       .img{
-        margin-left : 20px;
-        position: relative;
-        top : 20px;
-    }
-    .postcontnt{
-        position: relative;
-        top : -200px;
-        border : 1px solid lightgrey;
-        border-top: none;
-        border-bottom-right-radius:  15px;
-        border-bottom-left-radius: 15px;
-        font-size : small;
-    }
-    .description{
-        margin-top : 65px;
-        font-size : small;
-    }
-    .postcontnt img{
-        width: 100%;
-        border-bottom-right-radius:  15px;
-        border-bottom-left-radius: 15px;
-    
-    }
-    .Reactioncontainer{
-        display: flex;
-        align-items : center;
-       font-size : 20px;
-       border : 1px solid lightgray;
-       border-top : none;
-       border-bottom-right-radius: 15px;
-       border-bottom-left-radius: 15px;
-    }
-    .Reactioncontainer{
-        display: flex;
-        position: relative;
-        top : -200px;
-        align-items : center;
-       font-size : 10px;
-       border : 1px solid lightgray;
-       border-top : none;
-       border-bottom-right-radius: 15px;
-       border-bottom-left-radius: 15px;
-    }
-    .Like{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Comment{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Share{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Send{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .commentSection{
-        position: relative;
-        top : -200px;
-        display : flex;
-        flex-direction: row;
-        align-items : center;
-        margin-top : 10px;
-        margin-left : 10px;
-    }
-    .commenttext{
-        border : none;
-        outline: none;
-        background: none;
-        height : 30px;
-        width : 200px;
-    }
-    .commenttextbar{
-        border : 1px solid lightgray;
-        display: flex;
-        justify-content : space-between;
-        align-items : center;
-        padding: 10px;
-        border-radius: 20px;
-        height : 20px;
-        margin-left : 20px;
-        /* border: 1px solid black; */
-        background : #EEF3F8;
-        margin-top : 10px;
-        width : 250px;
-    }
-    
-}
-
-
-@media screen and (max-width:648px){
-    .post{
-        margin-left: 5px;;
-        height : 400px;
-        width :350px;
-        display: block;
-        position: absolute;
-        left :5px;
-        top : 70px;
-        font-size : small;
-    }
-    .postHeader {
-    
-        border : 1px solid lightgray;
-        display : flex;
-        align-items : center;
-        border-bottom : none;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-        position: relative;
-        top :-150px;
-       }
-       .img{
-        margin-left : 20px;
-        position: relative;
-        top : 20px;
-    }
-    .postcontnt{
-        position: relative;
-        top : -200px;
-        border : 1px solid lightgrey;
-        border-top: none;
-        border-bottom-right-radius:  15px;
-        border-bottom-left-radius: 15px;
-        font-size : small;
-    }
-    .description{
-        margin-top : 65px;
-        font-size : small;
-    }
-    .postcontnt img{
-        width: 100%;
-        border-bottom-right-radius:  15px;
-        border-bottom-left-radius: 15px;
-    
-    }
-    .Reactioncontainer{
-        display: flex;
-        align-items : center;
-       font-size : 20px;
-       border : 1px solid lightgray;
-       border-top : none;
-       border-bottom-right-radius: 15px;
-       border-bottom-left-radius: 15px;
-    }
-    .Reactioncontainer{
-        display: flex;
-        position: relative;
-        top : -200px;
-        align-items : center;
-       font-size : 10px;
-       border : 1px solid lightgray;
-       border-top : none;
-       border-bottom-right-radius: 15px;
-       border-bottom-left-radius: 15px;
-    }
-    .Like{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Comment{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Share{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .Send{
-        display: flex;
-        align-items : center;
-        margin-left: 30px;
-        cursor: pointer;
-        font-size : '10px';
-    }
-    .commentSection{
-        position: relative;
-        top : -210px;
+        margin-left: 15px;
+        margin-top : 50px;
+        border-radius : 10px;
+        background : white;
+        flex-direction : column;
         
-        display : flex;
-        flex-direction: row;
-        align-items : center;
-        margin-top : 10px;
-        margin-left : 10px;
     }
-    .commenttext{
-        border : none;
-        outline: none;
-        background: none;
-        height : 20px;
-        width : 200px;
-    }
-    .commenttextbar{
+    .postHeader {
+        padding-top: 10px;; 
         border : 1px solid lightgray;
-        display: flex;
-        justify-content : space-between;
+        display : flex;
         align-items : center;
-        padding: 10px;
-        border-radius: 20px;
-        height : 10px;
-        margin-left : 20px;
-        /* border: 1px solid black; */
-        background : #EEF3F8;
-        margin-top : 10px;
-        width : 250px;
-    }
-    
+        border-bottom : none;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+       }
+       .img{
+           margin-left : 20px;
+       }
+       .postHeaderinfo{
+           display : flex;
+          flex-direction: column;
+          align-items : flex-start;
+           margin-left : 10px;
+       }
+       .PostmansName{
+           font-size: medium;
+           font-weight: 600;
+       }
+       .dateofpost{
+           display : flex;
+           align-items : center;
+           color: grey;
+           font-size : 12px;
+       }
+       .designation{
+           display : flex;
+           font-size: 14px;
+           color : grey;
+       }
+       .description{
+          font-size: 15px;
+          padding: 5px;
+          margin: 15px;;
+       }
+       .postcontnt{
+           border : 1px solid lightgrey;
+           border-top: none;
+           border-bottom-right-radius:  15px;
+           border-bottom-left-radius: 15px;
+       }
+       .postcontnt img{
+           width: 100%;
+           border-bottom-right-radius:  15px;
+           border-bottom-left-radius: 15px;
+       
+       }
+       .Reactioncontainer{
+           width: 100%;
+           display: flex;
+           align-items : center;
+          font-size : 18px;
+          border : 1px solid lightgray;
+          border-top : none;
+          border-bottom-right-radius: 15px;
+          border-bottom-left-radius: 15px;
+       }
+       .Like{
+           display: flex;
+           align-items : center;
+           margin-left: 10px;
+           cursor: pointer;
+           font-size : '5px';
+       }
+       
+       .Comment{
+           display: flex;
+           align-items : center;
+           margin-left: 30px;
+           cursor: pointer;
+           font-size : '15px';
+       }
+       .Share{
+           display: flex;
+           align-items : center;
+           margin-left: 30px;
+           cursor: pointer;
+           font-size : '15px';
+       }
+       .Send{
+           display: flex;
+           align-items : center;
+           margin-left: 30px;
+           cursor: pointer;
+           font-size : '20px';
+       }
+       .Reactioncontainer :hover{
+           background-color : whitesmoke;
+       }
+       .commentSection{
+           display : flex;
+           flex-direction: row;
+           align-items : center;
+           margin-top : 10px;
+           margin-left : 10px;
+           height : 20px;
+       }
+       .commenttext{
+           border : none;
+           outline: none;
+           background: none;
+           height : 20px;
+           width : 250px;
+       }
+       .commenttextbar{
+           border : 1px solid lightgray;
+           display: flex;
+           justify-content : space-between;
+           align-items : center;
+           padding: 10px;
+           border-radius: 20px;
+           height : 20px;
+           margin-left : 20px;
+           /* border: 1px solid black; */
+           background : #EEF3F8;
+           margin-top : 10px;
+           width : 500px;
+       }
 }
     
-

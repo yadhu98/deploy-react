@@ -11,14 +11,13 @@ import GridOnIcon from '@material-ui/icons/GridOn';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Slider from 'react-slide-out';
 import 'react-slide-out/lib/index.css';
-import MenuContainer from './MenuButton/MenuContainer';
 export default function Navbar(handleMouseDown) {
     const [isOpen, setIsopen] = useState(false)
     const togglePopup =()=>{
         setIsopen(!isOpen)
       }
     return (
-        
+       
         <div className="navbar">
             <div className="navbar-left">
                 <img src='https://brandeps.com/icon-download/L/Linkedin-icon-vector-13.svg' 
@@ -42,13 +41,10 @@ export default function Navbar(handleMouseDown) {
                 <NavbarMaterials Icon={GridOnIcon} title={"Work"}/> */}
                 <div className="avatar-container"><NavbarMaterials avatar="https://cdn-images-1.medium.com/max/1200/1*NpUUls7kjn9JhO4ChjGV7w.png" title="me"/></div>
                 <div className = "work-container"><NavbarMaterials onClick={togglePopup} Icon={GridOnIcon} title={"Work"}/></div>
-                {isOpen && <MenuContainer 
-          
-        
-        
-        />}
+            
             </div>
         </div>
+        
     )
 }
 
