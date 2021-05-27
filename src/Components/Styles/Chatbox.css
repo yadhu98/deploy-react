@@ -71,3 +71,11 @@
     position: absolute;
     top : 470px;
 }
+@media screen and (max-width:648px){
+    .chatbox-container{
+        display: none;
+    }
+    .initchatbox{
+        display : none;
+    }
+}
