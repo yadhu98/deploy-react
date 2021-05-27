@@ -1,0 +1,208 @@
+.navbar{
+    display: flex;
+    margin:auto;
+    top : 0;
+    position: sticky;
+    justify-content : space-evenly;
+    padding-top : 10px;
+    padding-bottom :10px;
+    width : 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+.navbar-left{
+    display: flex;
+}
+.AddPost-container{
+    display: none;
+}
+.navbar-left img{
+     object-fit : contain; /*fix as per the aspect ratio*/
+     height : 40px;
+     margin-right : 10px ;
+     margin-left: 140px ;
+     margin-top : 10px;
+}
+.navbar-search{
+    display: flex;
+    align-items : center;
+    padding: 10px;
+    border-radius: 5px;
+    height : 20px;
+    /* border: 1px solid black; */
+    background : #EEF3F8;
+    margin-top : 10px;
+    width : 425px;
+}
+.search-box{
+    border : none;
+    outline: none;
+    background: none;
+    /* color : #909396; */
+    font-size : medium;
+    width : 400px;
+    height : 30px;
+}
+.navbar-right{
+    display: flex;
+    margin-top : 10px;
+    margin-left: 30px;
+}
+.navbar-right-icons{
+    display : flex;       
+}
+
+
+@media screen and (max-width: 1230px){
+   
+    .navbar-right{
+       font-size : 15px;
+    }
+    .navbar-search{
+        width : 400px;
+    }
+    .navbar-left img{
+        margin-left : 30px;
+    }
+    
+
+}
+@media screen and (max-width:1110px){
+    .menu-icon{
+        display : block;
+    }
+    .navbar{
+        flex-direction: column;
+        width : 250px;
+        position: absolute;
+        padding : 20px;
+        right :10;
+    }
+    .navbar-right{
+        flex-direction: column-reverse;
+        width : 150px;
+    }
+    .navbar-right-icons{
+        display : flex; 
+        flex-direction : column;      
+    }
+   
+    .navbar-search{
+        width : 230px;
+    }
+    .work-container{
+        visibility : hidden;
+    }
+}
+@media screen and (max-width:648px){
+    .navbar{
+        position : sticky;
+        margin-left: 0px;
+    }
+    .navbar-right{
+        display: flex;
+        position: absolute;
+        left : -45px;
+        top : 650px;
+        /* flex-direction: row; */
+        align-content: flex-end;
+        border : none;
+    }
+  
+    .navbar-search{
+        position : absolute;
+        top : 10px;
+        left: 80px;
+        width : 250px;
+        height : 10px;
+    }
+    .menu-icon{
+        position: absolute;
+        top : 20px;
+        margin-left : 5px;
+    }
+    .navbar-left img{
+        visibility: hidden;
+        /* height : 30px;
+        position: absolute;
+        top : 10px;
+        left : 60px; */
+    }
+    .navbar-right-icons{
+        display : flex; 
+        flex-direction : row;
+        align-items : center; 
+        margin-left: 75px;  
+    }
+    .avatar-container{
+        position : absolute;
+        top : -640px;
+        left : 50px;
+        margin :0;
+        object-fit : contain;
+        /* border: 1px solid black; */
+        width :30px;
+        display : flex;
+        padding-left : 10px;
+        
+    }
+    .work-container{
+        visibility : hidden;
+    }
+    .AddPost-container{
+        display: inline;
+        position: absolute;
+        left : 200px;
+        width : 50px;
+        display: flex;
+        padding-left : 15px; 
+        /* border : 1px solid black; */
+
+    }
+    .Messaging-container{
+        display : flex;
+        position: absolute;
+        top : -640px;
+        left : 360px;
+        /* border: 1px solid black; */
+        width :50px;
+        
+    }
+    .home-container{
+        position : absolute;
+        display : flex;
+        left : 30px;
+        /* border : 1px solid black; */
+        padding-left : 15px;
+        padding-right: 0px;
+        width: 50px;
+        
+    }
+    .network-container{
+        position : absolute;
+        left : 110px;
+        top : 25px;
+        /* border : 1px solid black; */
+        width : 60px;
+        padding-left : 15px;
+        display : flex;
+    }
+    .notifications-container{
+        position : absolute;
+        left : 280px;
+        /* border : 1px solid black; */
+        width : 60px;
+        display : flex;
+    }
+    .Jobs-container{
+        position : absolute;
+        left : 360px;
+        /* border : 1px solid black; */
+        display : flex;
+        width : 60px;
+        padding-left: 15px;
+    }
+
+   
+}

@@ -1,0 +1,73 @@
+.chatbox-container{
+    display: flex;
+    flex-direction: column;
+    border : 1px solid lightgray;
+    width : 250px;
+    background-color :white;
+    position: sticky;
+    top : 100px;
+    
+    border-radius : 10px;
+}
+.chatpeople{
+    background-color : white;
+    cursor: pointer;
+}
+.chatpeople :hover{
+    background-color : whitesmoke;
+    cursor: pointer;
+}
+.chatboxHeader{
+    border : 1px solid lightgrey;
+    border-top-right-radius :10px;
+    border-top-left-radius: 10px;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    padding :5px;
+}
+.chatboxHeaderone{
+    display : flex;
+    align-items : center;
+}
+.chatboxHeadertwo{
+    display : flex;
+    align-items : center;
+}
+.chatboxSearch{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    align-items : center;
+    padding-left : 10px;
+    height : 40px;
+    
+}
+.chatboxSeachpartone{
+    display : flex;
+
+}
+.searchtextchat{
+    border : none;
+    outline: none;
+    background: none;
+}
+.chatboxmember{
+    border : 1px solid lightgray;
+    border-bottom: none;
+    border-right: none;
+    border-left : none;
+}
+.initchatbox{
+    display : flex;
+    width: 200px;
+    flex-direction: row;
+    align-items : center;
+    justify-content : space-between;
+    background-color: #0077B5;
+    color : white;
+    border-radius: 10px;
+    height : 50px;
+    position: absolute;
+    top : 470px;
+}

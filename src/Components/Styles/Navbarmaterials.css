@@ -1,0 +1,46 @@
+.navbarmaterial{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    color : #666666;
+    margin-right : 20px;
+    cursor : pointer;
+}
+
+.navbarmaterial:hover{
+     color :#191919;
+}
+.navbarmaterial-title{
+    padding : 0;
+    margin-top : 0;
+}
+.navbarmaterial-icon{
+    object-fit: contain;
+    height : 25px !important;/*inorder to align the avatar */
+    width : 25px !important;
+}
+@media screen and (max-width:1110px){
+    .navbarmaterial{
+        display : flex;
+        flex-direction : row;
+        align-items : left;
+        font-size : 20px;
+        width : 200px;
+    }
+    .navbarmaterial-title{
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        top : 12px;
+    }
+}
+@media screen and (max-width:648px){
+    .navbarmaterial{
+        display: flex;
+        font-size: 10px;
+        margin-right :25px;
+        justify-content:space-evenly;
+        flex-direction: column;
+
+    }
+}

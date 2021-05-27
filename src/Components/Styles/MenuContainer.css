@@ -1,0 +1,17 @@
+.MenuContainerpart{
+    display: flex;
+    position: absolute;
+    left : 1000px;
+}
+.Menucontainerpart1{
+    display: flex;
+    flex-direction: column;
+    max-width : 300px;
+    align-items : center;
+}
+.MenucontainerProductItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: right;
+}

@@ -1,0 +1,83 @@
+.feed{
+    border: 1px solid lightgray;
+    display : flex;
+    height : 150px ;
+    flex : 0.5;
+    width : 600px;
+    margin-left: 30px;
+    border-radius : 10px;
+}
+.startpost{
+    display :none;
+}
+.feedinput{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    padding-top: 20px;
+    padding-left : 20px;
+}
+.startapostbtn{
+    width : 500px;
+    margin-left : 20px;
+    height : 50px;
+    border-radius : 30px;
+    border : none;
+    text-align: left;
+    color : grey;
+    margin-right: 20px;
+}
+.feedTypes{
+    display : flex;
+    margin-top : 10px;
+    display : flex;
+    justify-content : space-evenly;
+    height : 10 px;
+}
+.feedTypes :hover{
+    background-color : whitesmoke;
+}
+
+
+@media screen and (max-width:1110px){
+    .feed{
+        display: block;
+        position: absolute;
+        left :300px;
+        top : 50px;
+    }
+}
+@media screen and (max-width:969px){
+    .feed{
+        display: block;
+        position: absolute;
+        width: 420px;
+        font-size: smaller;
+        
+    }
+}
+@media screen and (max-width:800px){
+    .feed{
+        display: none;
+    }
+    .startpost{
+        display: block;
+        position: absolute;
+        left: 300px;
+        top: 80px;
+        
+    }
+    .startpostbtnres{
+        height:60px;
+        width : 250px;
+        background : #0077B5;
+        color : white;
+        border-radius : 12px;
+        border : none;
+    }
+}
+@media screen and (max-width:648px){
+    .startpost{
+        display: none;
+    }
+}

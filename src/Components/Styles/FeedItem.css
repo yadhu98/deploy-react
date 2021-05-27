@@ -1,0 +1,14 @@
+.Feeditemstyle{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+h6{
+    font-weight: 700;
+    color:gray;
+    font-size: 12.5px;
+}

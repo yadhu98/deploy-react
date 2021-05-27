@@ -1,0 +1,16 @@
+.appbody{
+    display: flex;
+}
+.Chatboxcomp{
+    position: sticky;
+    top : 100px;
+    left : 1100px;
+}
+.stickychat{
+    position: sticky;
+    margin-left : 20px;
+}
+.containerSticky{
+    display: flex;
+    position: sticky;
+}
