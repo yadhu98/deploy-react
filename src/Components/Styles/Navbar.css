@@ -84,7 +84,7 @@
     .navbar{
         flex-direction: column;
         width : 250px;
-        position: absolute;
+        position: fixed;
         padding : 20px;
         right :10;
         background : whitesmoke;
@@ -219,20 +219,46 @@
     }
     
 }
+@media screen and (max-width:414px){
+    .navbaronlyformobile{
+        display: flex;
+        align-items : center;
+        justify-content : space-around;
+        background : white;
+        width : 415px;
+        margin-left : 10px;
+        height :110px;
+        padding: 0px;
+        position: fixed;
+        left :-10px;
+        top :0px;
+    } 
+    .navbar-right-icons{
+        flex-direction : row;
+        position : fixed;
+        top : 650px;
+        height : 120px;
+        padding-top: 0px;
+        width : 414px;
+        background : white;
+    }
+}
 @media screen and (max-width:375px){
     .navbar{
         display: flex;
         flex-direction : row;
-        background : white;
-        border: none;
-       
-
     }
     .navbar-search{
         display: none;
     }
     .navbar-right-icons{
         flex-direction : row;
+        position : fixed;
+        top : 580px;
+        height : 120px;
+        padding-top: 0px;
+        
+        background : white;
     }
     .home-container{
         display: flex;
@@ -273,10 +299,10 @@
     .navbar-right{
         /* border:  1px solid black; */
         width : 200px;
-        height : 60px;
-        position : absolute;
-        top : 720px;
-        left : -25px; 
+        height : 160px;
+        position : fixed;
+        top : 600px;
+        left : -45px; 
     }
     .AddPost-container{
         display: flex;
@@ -299,16 +325,136 @@
         display: flex;
         align-items : center;
         justify-content : space-around;
-        
-        width : 360px;
-        margin-left : 25%;
+        background : white;
+        width : 375px;
+        margin-left : 10px;
+        height :110px;
+        padding: 0px;
+        position: fixed;
+        left :-10px;
+        top :0px;
     } 
     .searchboxformobile{
         display: flex;
         align-items : center;
-        width : 260px;
+        width : 230px;
         border: 1px solid lightgray;
-        height : 35px;
+        height : 25px;
+        margin-left : 10px;
+        margin-right :10px;
+        background: #EEF3F8;
+    }
+    .avatarmobile{
+        margin-left : 5px;
+    }
+    .searchbarmobile{
+        border : none;
+        outline : none;
+        background: none;
+        width : 200px;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    .navbar{
+        display: flex;
+        flex-direction : row;
+    }
+    .navbar-search{
+        display: none;
+    }
+    .navbar-right-icons{
+        display : flex;
+        justify-content: center;
+        flex-direction : row;
+        position : fixed;
+        top : 600px;
+        height : 150px;
+        padding-top: 0px;
+        margin-top: 0px;
+        background : white;
+    }
+    .home-container{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width : 50px;
+        margin-right:30px;
+        
+    }
+    .network-container{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width : 60px;
+        margin-right:20px;
+    }
+    .Jobs-container{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width : 60px;
+        margin-right:20px;
+    }
+    .Messaging-container{
+        display: none;
+        justify-content : center;
+        align-items : center;
+        width : 60px;
+        margin-right:20px;
+    }
+    .notifications-container{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width : 60px;
+        margin-right:20px;
+    }
+    .navbar-right{
+        /* border:  1px solid black; */
+        width : 200px;
+        height : 160px;
+        position : fixed;
+        top : 600px;
+        left : -45px; 
+    }
+    .AddPost-container{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width : 60px;
+        margin-right:20px;
+    }
+    .stickybottom{
+        display: sticky;
+        background : #F3F2EF; 
+        width : 375px;
+        margin-left: -3px;
+    }
+    .avatar-container{
+       display: none;
+    }
+    
+    .navbaronlyformobile{
+        display: flex;
+        align-items : center;
+        justify-content : space-evenly;
+        background : white;
+        width : 375px;
+        margin-left : 10px;
+        height :110px;
+        padding: 0px;
+        position: fixed;
+        left :-15px;
+        top :0px;
+    } 
+    .searchboxformobile{
+        display: flex;
+        align-items : center;
+        width : 230px;
+        border: 1px solid lightgray;
+        height : 25px;
         margin-left : 10px;
         margin-right :10px;
         background: #EEF3F8;
