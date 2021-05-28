@@ -19,7 +19,7 @@ function App() {
         <Feed/>
         <div className="stickychat">
         <div className="Chatboxcomp" onClick={togglePopup}>
-        <InitialChatbox/></div>
+        <InitialChatbox className="fixedbox"/></div>
         {isOpen && <Chatbox className="containerSticky"
           
         

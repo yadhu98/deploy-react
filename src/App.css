@@ -8,10 +8,11 @@
 }
 .stickychat{
     position: fixed;
-    bottom : 50px;
-    right : 0;
+    bottom : 75px;
+    right : 50px;
     margin-left : 20px;
 }
+
 .containerSticky{
     display: flex;
     position: sticky;
